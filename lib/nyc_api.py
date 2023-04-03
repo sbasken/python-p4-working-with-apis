@@ -2,8 +2,8 @@ import requests
 import json
 
 class GetPrograms:
-    def __init__(self):
-        pass
+    # def __init__(self):
+    #     pass
 
     def get_programs(self):
         URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
@@ -20,6 +20,8 @@ class GetPrograms:
 
         return programs_list
 
+# programs = GetPrograms().get_programs()
+# print(programs)
 programs = GetPrograms()
 programs_schools = programs.program_school()
 
